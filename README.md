@@ -7,7 +7,8 @@
 
 ### Features
 
-- Console and file output.
+- Colorized console output.
+- File output.
 - Configurable: logging level, timestamp format, message prefix
 
 ### Installation
