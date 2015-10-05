@@ -29,7 +29,7 @@ vapor.use(winstonLogger);
 vapor.use(winstonLogger, {
     consoleLevel: 'debug',
     fileLevel: 'debug',
-    logDir: './logs',
+    logDir: 'logs',
     dateFormat: 'YYYY-MM-DD HH:mm:ss',
     prefix: false
 });
@@ -51,7 +51,7 @@ Available values: `none`, `debug`, `info`, `warn` and `error`.
 
 #### `logDir` (optional)
 
-Directory used by file logger if `fileLevel >= info`. Default value: `./logs`
+Directory used by file logger if `fileLevel >= info`. Default value: `logs`
 
 #### `dateFormat` (optional)
 

@@ -8,14 +8,14 @@ var fs = require('fs');
 var DEFAULT_CONFIG = {
     consoleLevel: 'debug',
     fileLevel: 'none',
-    logDir: './logs',
+    logDir: 'logs',
     dateFormat: 'YYYY-MM-DD HH:mm:ss',
     prefix: false
 };
 
 function createLogger(config) {
     var username = config.username;
-    var filePath = path.join(config.logDir, username + '.log');
+    var filePath = path.join('.', config.logDir, username + '.log');
 
     var logOptions = {
         levels: {
@@ -43,8 +43,9 @@ function createLogger(config) {
     }
 
     if(config.fileLevel !== 'none') {
-        if (!fs.existsSync(config.logDir)){
-            fs.mkdirSync(config.logDir);
+        var dirPath = path.join('.', config.logDir);
+        if (!fs.existsSync(dirPath)){
+            fs.mkdirSync(dirPath);
         }
 
         logOptions.transports.push(new (winston.transports.File)({
