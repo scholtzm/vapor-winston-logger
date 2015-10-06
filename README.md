@@ -59,7 +59,7 @@ Date format for timestamps. Default value: `YYYY-MM-DD HH:mm:ss`
 
 #### `prefix` (optional)
 
-If enabled, all log messages are prefixed with bot's login. Default value: `false`
+If enabled, all log messages are prefixed with bot's username. Default value: `false`
 
 ### License
 
