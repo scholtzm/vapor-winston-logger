@@ -27,11 +27,11 @@ var winstonLogger = require('vapor-winston-logger');
 vapor.use(winstonLogger);
 // or
 vapor.use(winstonLogger, {
-    consoleLevel: 'debug',
-    fileLevel: 'debug',
-    logDir: 'logs',
-    dateFormat: 'YYYY-MM-DD HH:mm:ss',
-    prefix: false
+  consoleLevel: 'debug',
+  fileLevel: 'debug',
+  logDir: 'logs',
+  dateFormat: 'YYYY-MM-DD HH:mm:ss',
+  prefix: false
 });
 ```
 
