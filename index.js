@@ -19,16 +19,16 @@ function createLogger(config) {
 
   var logOptions = {
     levels: {
-      debug: 0,
-      info: 1,
-      warn: 2,
-      error: 3
+      error: 0,
+      warn: 1,
+      info: 2,
+      debug: 3
     },
     colors: {
-      debug: 'grey',
-      info: 'green',
+      error: 'red',
       warn: 'yellow',
-      error: 'red'
+      info: 'green',
+      debug: 'grey'
     },
     transports: []
   };
