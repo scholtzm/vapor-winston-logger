@@ -51,7 +51,7 @@ Available values: `none`, `debug`, `info`, `warn` and `error`.
 
 #### `logDir` (optional)
 
-Directory used by file logger if `fileLevel >= info`. Default value: `logs`
+Directory used by file logger if `fileLevel` isn't set to `none`. Default value: `logs`
 
 #### `dateFormat` (optional)
 
