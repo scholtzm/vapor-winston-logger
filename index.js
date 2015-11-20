@@ -73,7 +73,7 @@ function createLogger(config) {
   return logger;
 }
 
-exports.name = 'winston-logger';
+exports.name = 'vapor-winston-logger';
 
 exports.plugin = function(VaporAPI) {
   var config = extend(true, {}, DEFAULT_CONFIG, VaporAPI.data);

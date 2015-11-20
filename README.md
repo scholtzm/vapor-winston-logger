@@ -57,6 +57,8 @@ Directory used by file logger if `fileLevel` isn't set to `none`. Default value:
 
 Date format for timestamps. Default value: `YYYY-MM-DD HH:mm:ss`
 
+Timestamps are internally implemented with [momentjs](http://momentjs.com/). Check out their docs for possible formatting options.
+
 #### `prefix` (optional)
 
 If enabled, all log messages are prefixed with bot's username. Default value: `false`
