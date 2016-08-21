@@ -65,7 +65,7 @@ function createLogger(config) {
 
   // Add prefix if necessary
   if(config.prefix === true) {
-    logger.addFilter(function(msg) {
+    logger.filters.push(function(level, msg) {
       return util.format('[%s] %s', username, msg);
     });
   }
