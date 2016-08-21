@@ -1,6 +1,6 @@
 {
   "name": "vapor-winston-logger",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Vapor plugin which provides Winston-based logger for all message events.",
   "main": "index.js",
   "scripts": {
